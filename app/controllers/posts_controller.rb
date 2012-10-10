@@ -4,6 +4,13 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
 
+    #Sunspot
+       @search = Post.search do
+      fulltext params[:search]
+    end
+  @posts = @search.results
+
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
