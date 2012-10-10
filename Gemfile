@@ -26,6 +26,8 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
+gem 'acts-as-taggable-on'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
