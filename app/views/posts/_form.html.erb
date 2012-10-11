@@ -12,15 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br />
+    <%= f.label "Post Title" %><br />
     <%= f.text_field :title %>
   </div>
   
     <div class="field">
-    <%= f.label :tag_list %><br />
-    <%= f.text_field :tag_list %>
+    <%= f.label "Category" %><br />
+    <%= f.radio_button :tag_list, "Events" %> Events
+    <%= f.radio_button :tag_list, "Forsale" %> For Sale
+    <%= f.radio_button :tag_list, "Jobs" %> Jobs
+    <%= f.radio_button :tag_list, "Housing" %> Housing
+    <%= f.radio_button :tag_list, "Deals" %> Deals
   </div>
   
+
   <div class="field">
     <%= f.label :content %><br />
     <%= f.text_area :content %>
@@ -28,7 +33,7 @@
   
   <div class="field">
     <%= f.label :lifespan %><br />
-    <%= f.select("lifespan", (5..25)) %>
+    <%= f.select("lifespan", [5,15,25]) %>
   </div>
 
   <div class="field">
