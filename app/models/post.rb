@@ -1,7 +1,9 @@
 class Post < ActiveRecord::Base
 
  searchable do
-    text :title, :content
+    text :title, :boost => 5
+    text :content
+    
     end
 
   belongs_to :user
