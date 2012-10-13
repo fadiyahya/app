@@ -32,6 +32,8 @@ gem 'devise'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem 'acts-as-taggable-on'
+gem 'client_side_validations'
+
 
 
 
